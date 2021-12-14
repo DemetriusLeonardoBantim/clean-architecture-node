@@ -3,17 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "standard":{
-    "env": ["jest"]
-  },
   "devDependencies": {
-    "husky": "^7.0.4",
+    "husky": "^7.0.0",
     "jest": "^27.4.3",
     "lint-staged": "^12.1.2",
     "standard": "^16.0.4"
   },
   "scripts": {
-    "test": "jest --watchAll",
-    "test:staged":"jest --passWithNoTests"
+    "test": "jest --watchAll --silent --noStackTrace",
+    "test:staged": "jest --passWithNoTests --findRelatedTests",
+    "prepare": "husky install"
   }
 }
