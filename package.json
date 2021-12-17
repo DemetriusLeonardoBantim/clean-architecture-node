@@ -15,11 +15,14 @@
     "standard": "^16.0.4"
   },
   "scripts": {
-    "test":"jest --silent --colors --noStackTrace --passWithNoTests",
-    "test:unit":"npm teste -- --watchAll -c jest-unit-config.js",
-    "test:integration":"npm teste -- --watchAll -c jest-integration-config.js",
-    "test:staged":"npm test -- --findRelatedTests",
-    "test:ci":"npm test -- --coverage",
+    "test": "jest --silent --colors --noStackTrace --passWithNoTests",
+    "test:unit": "npm teste -- --watchAll -c jest-unit-config.js",
+    "test:integration": "npm teste -- --watchAll -c jest-integration-config.js",
+    "test:staged": "npm test -- --findRelatedTests",
+    "test:ci": "npm test -- --coverage",
     "prepare": "husky install"
+  },
+  "dependencies": {
+    "validator": "^13.7.0"
   }
 }
