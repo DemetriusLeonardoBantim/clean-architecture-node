@@ -15,9 +15,10 @@
     "standard": "^16.0.4"
   },
   "scripts": {
-    "test": "jest --watchAll --silent --noStackTrace",
-    "test:staged": "jest --passWithNoTests --findRelatedTests",
-    "test:ci": "jest --coverage",
+    "test":"jest --silent --colors --noStackTrace --passWithNoTests",
+    "test:unit":"npm teste -- --watch",
+    "test:staged":"npm test -- --findRelatedTests",
+    "test:ci":"npm test -- --coverage",
     "prepare": "husky install"
   }
 }
