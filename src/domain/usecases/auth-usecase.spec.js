@@ -10,7 +10,7 @@ class AuthUseCase {
 describe(('Auth UseCase'), () => {
   test('Should throw if no is provided', async () => {
     const sut = new AuthUseCase()
-    const accessToken = await sut.auth()
-    expect(accessToken).rejects.toThrow()
+    const promise = await sut.auth()
+    expect(promise).rejects.toThrow()
   })
 })
