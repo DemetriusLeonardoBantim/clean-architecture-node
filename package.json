@@ -23,6 +23,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "validator": "^13.7.0"
   }
 }
