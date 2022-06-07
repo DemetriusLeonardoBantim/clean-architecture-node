@@ -16,8 +16,6 @@ class UpdateAccessTokenRepository{
   }
 }
 
-
-
 describe('UpdateAccessToken Repository', () => {
 
   beforeAll(async () => {
